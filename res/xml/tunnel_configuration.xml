@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:holo="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        holo:title="Gateway Configuration"
+        holo:summary="The gateway in this case will be the server you will use to tunnel your connection through." >
+        <EditTextPreference
+            holo:key="gateway-host"
+            holo:title="Gateway Host" />
+        <EditTextPreference
+            holo:key="gateway-port"
+            holo:title="Gateway Port" />
+        <EditTextPreference
+            holo:key="gateway-user"
+            holo:title="Gateway User" />
+        <EditTextPreference
+            holo:key="gateway-password"
+            holo:title="Gateway Password" />
+    </PreferenceCategory>
+    <PreferenceCategory holo:title="Tunnel Configuration" >
+        <EditTextPreference
+            holo:key="local-port"
+            holo:title="Local Port" />
+        <EditTextPreference
+            holo:key="remote-host"
+            holo:title="Remote Host" />
+        <EditTextPreference
+            holo:key="remote-port"
+            holo:title="Remote Port" />
+    </PreferenceCategory>
+
+    <!--
+    <PreferenceCategory holo:title="@string/preference_attributes" >
+        <CheckBoxPreference
+            holo:key="parent_checkbox_preference"
+            holo:summary="@string/summary_parent_preference"
+            holo:title="@string/title_parent_preference" />
+
+        <CheckBoxPreference
+            holo:dependency="parent_checkbox_preference"
+            holo:key="child_checkbox_preference"
+            holo:layout="?holo:attr/preferenceLayoutChild"
+            holo:summary="@string/summary_child_preference"
+            holo:title="@string/title_child_preference" />
+    </PreferenceCategory>
+    -->
+
+</PreferenceScreen>
